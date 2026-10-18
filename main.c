@@ -1,13 +1,11 @@
 #include <stdio.h>
-int main (void)
-{ int sayiA, sayiB, sayiC, buyuk;
-  printf("Uc sayi giriniz:");
-  scanf("%d %d %d", &sayiA, &sayiB, &sayiC);
-  buyuk=sayiA;
-  if(sayiB>buyuk)
-    buyuk=sayiB;
-  if(sayiC>buyuk)
-    buyuk=sayiC;
-printf("Buyuk sayi: %d\n",buyuk);
-return(0);
+int main() {
+    printf("Bir sayi giriniz:");
+    scanf("%d", &sayi);
+    /*Bir sayının 7'ye bölünüp bölünmediğini kontrol et*/
+    if (sayi % 7 == 0)
+        printf("%d sayisi 7'ye tam bölünür.\n", sayi);
+    else 
+        printf("%d sayisi 7'ye tam bölünmez.\n", sayi);
+    return 0;
 }
