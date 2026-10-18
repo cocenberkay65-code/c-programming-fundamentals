@@ -1,5 +1,13 @@
 #include <stdio.h>
-int main() {
-printf("Merhaba Dunya! Algoritma ve C yolculugu basliyor.\\n");
-return 0;
+int main (void)
+{ int sayiA, sayiB, sayiC, buyuk;
+  printf("Uc sayi giriniz:");
+  scanf("%d %d %d", &sayiA, &sayiB, &sayiC);
+  buyuk=sayiA;
+  if(sayiB>buyuk)
+    buyuk=sayiB;
+  if(sayiC>buyuk)
+    buyuk=sayiC;
+printf("Buyuk sayi: %d\n",buyuk);
+return(0);
 }
