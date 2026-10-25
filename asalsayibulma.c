@@ -16,7 +16,7 @@ int main()
         {
             if((num%i)==0)
                bayrak=0;
-               i=i+1;
+            i=i+1;
         }
         if((bayrak==1))
             printf("%4d", num);
